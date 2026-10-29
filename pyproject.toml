@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crossref-validator"
+version = "0.1.0"
+description = "Check BibTeX metadata (title, year, journal) against Crossref records and flag mismatches."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+crossref-validator = "crossref_validator.cli:main"
+
+[tool.setuptools]
+packages = ["crossref_validator"]
